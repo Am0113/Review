@@ -1,33 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Review for Apple</title>
-  <meta name = "Discripcion" contant = "그동안 배웠던 HTML과 CSS를 복습하며 나의 것으로 만들어보겠습니다.">
-  <meta name = "author" content = "HyangamLee">
-
-</head>
-<body>
-  <!-- navbar -->
-  <nav id="navbar">
-    <div class="nav__logo">
-      <i class=""><img src="images/logo.png" alt="Hillsong"></i>
-      <a href="#">CHURCH</a>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hillsong Church</title>
+    <meta name = "Discripcion" contant = "그동안 배웠던 HTML과 CSS를 복습하며 나의 것으로 만들어보겠습니다.">
+    <meta name = "author" content = "HyangamLee">
+    <link rel="shortcut icon" href="//cdn.hillsong.com/wp-content/themes/hillsong/favicon/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav id="navigation">
+      <div id="globar-nav" class="globar-nav">
+        <ul>
+          <li class="globar-nav-item"></li>
+          <li class="globar-nav-item"></li>
+          <li class="globar-nav-item"></li>
+          <li class="globar-nav-item"></li>
+          <li class="globar-nav-item"></li>
+          <li class="globar-nav-item"></li>
+          <li class="globar-nav-item"></li>
+          <li class="globar-nav-item"></li>
+          <li class="globar-nav-item"></li>
+          <li class="globar-nav-item"></li>
+        </ul>
+      </div>
+      <div class="nav__logo">
+        
+        <a href="https://hillsong.com">
+          <img src="images/logo.png" alt="Hillsong">
+          <span>Church</span>
+        </a>
+      </div>
+      <div class="navbar__menu">
+        <ul class="navbar__menu">
+          <li class="navbar__menu__item active" data-link="#ABOUT">ABOUT</li>
+          <li class="navbar__menu__item" data-link="#LOCATIONS">LOCATIONS</li>
+          <li class="navbar__menu__item" data-link="#MINISTRTES">MINISTRTES</li>
+          <li class="navbar__menu__item" data-link="#MUSIC">MUSIC</li>
+          <li class="navbar__menu__item" data-link="#EVENTS">EVENTS</li>
+          <li class="navbar__menu__item" data-link="#NEWSROOM">NEWSROOM</li>
+          <li class="navbar__menu__item" data-link="#STORIES">STORIES</li>
+          <li class="navbar__menu__item" STORIES="#ONLINE">ONLINE</li>
+        </ul>  
+      </div>
+    </nav>
+    <!-- Header -->
+    <section id="header" class="section">
+      <div class="header__container">
+        <div class="header-container" style="background-image: url(images/am.jpeg)">
+          <div class="header-container image">
+            <div class="title">
+                <h1 class="title">Hillsong Church</h1>
+            </div>
+            <div class="subtitle">
+              <h3 class="home__welcome">Welcome Home</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      <!-- About -->
+    <div id="locations" class="Hillsong row section">
+      <div class="section-row">
+        <div class="rowtitles">
+          <p>Hillsong is a church that believes in jesus,<br/> a church that loves God and people.</p>
+        </div>
+      </div>
+      <div class="rowtext">
+        Overwhelmed by the gift of salvation we have found in Jesus, 
+        we have a heart for authentic worship, are passionate about 
+        the local church, and are on mission to see God’s kingdom 
+        established across the earth.
+      </div>
     </div>
-    <div class="navbar__menu">
-      <ul class="navbar__menu">
-        <li class="navbar__menu__item active" data-link="#ABOUT">ABOUT</li>
-        <li class="navbar__menu__item" data-link="#LOCATIONS">LOCATIONS</li>
-        <li class="navbar__menu__item" data-link="#MINISTRTES">MINISTRTES</li>
-        <li class="navbar__menu__item" data-link="#MUSIC">MUSIC</li>
-        <li class="navbar__menu__item" data-link="#EVENTS">EVENTS</li>
-        <li class="navbar__menu__item" data-link="#NEWSROOM">NEWSROOM</li>
-        <li class="navbar__menu__item" data-link="#STORIES">STORIES</li>
-        <li class="navbar__menu__item" STORIES="#ONLINE">ONLINE</li>
-      </ul>  
-    </div>
-
-</body>
+    <!-- Intro -->
+    <section id="Intro" class="intro section">
+      <div class="Intro-menu">
+        <a href="#" class="Intro-menu" target="#tab-ASIA-FACIFIC">ASIAFACIFIC</a>
+        <a href="#" class="Intro-menu" target="#tab-EUROPE">EUROPE</a>
+        <a href="#" class="Intro-menu" target="#tab-NORTH-AMERICA">NORTH AMERICA</a>
+        <a href="#" class="Intro-menu" target="#tab-LATIN-AMERICA">LATIN AMERICA</a>
+        <a href="#" class="Intro-menu" target="#tab-AFRICA--MIDDLE-EAST">AFRICA & MIDDLE EAST</a>
+      <div class="work__categories">
+        <button class="category__btn selected" data-filter="*">
+          All<span class="category__count">8</span></button>
+        <button class="category__btn"  data-filter="Front-end">
+          Front-end<span class="category__count">3</span></button>
+        <button class="category__btn" data-filter="Back-end">
+          Back-end<span class="category__count">3</span></button>
+        <button class="category__btn" data-filter="Mobile">
+          Mobile<span class="category__count">
+          2</span></button>
+      </div>
+      <div class="work__projects">
+        <a 
+        href="https://github.com/Am0113/portpolio" 
+        class="project" 
+        target="blank"
+        data-type="*"
+        >
+        <img class="project__img" src="images/projects/1.jpeg" alt="1">
+    </section>
+  </body>
 </html>

@@ -1,0 +1,137 @@
+:root {
+  /* Color */
+--color-white: #ffffff;
+--color-light-white: #eeeeee;
+--color-dark-white: #bdbdbd;
+--color-black: #4d4d4d;
+--color-dark-grey: #4d4d4d;
+--color-grey: #616161;
+--color--light-grey: #7c7979;
+--color-blue: #73aace;
+--color-yellow: #fff7d1;
+--color-orange: #feb546;
+--color-black: #000000;
+
+
+ /* Font size */
+  --font-: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* Font weight */
+  --weight-light: 300;
+  --weight-medium: 500;
+  --weight-bold:700;
+  /* Size */
+  --size-border-radius: 4px;
+
+  /* Animation */
+  --animation-duration: 400ms;
+
+}
+
+
+/* Universal tags */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  cursor: default;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* Typography */
+h1 {
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  color: var(--color-black);
+  margin: 16px 0px;
+}
+
+h2 {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+  color: var(--color-black);
+  margin: 8px 0px;
+}
+
+h3 {
+  font-size: var(--font-regular);
+  font-weight: var(--font-regular);
+  color: var(--color-black);
+  margin: 8px 0px;
+}
+
+p {
+  font-size: var(--font-regular);
+  font-weight: var(--font-regular);
+  color: var(--color-black);
+  margin: 4px 0px;
+}
+
+/* Navbar */
+#navigation {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  border-radius: 2px;
+  padding: 0px 0px 0px 2px;
+  color: var(--color-black);
+  background-color: var(--color-white);
+  align-items: center;
+}
+
+
+.nav__logo {
+  color: var(--color-black);
+  position: absolute;
+  left: 0;
+}
+
+.nav__logo img{
+  width: 50px;
+  height: 50px;
+  margin: 0px 10px 0px 0px;
+}
+
+.nav__logo a {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  letter-spacing: .21px;
+  padding: 10px 0px 10px 20px;
+}
+
+.navbar__menu {
+  display: flex;
+  
+}
+
+.navbar__menu__item {
+  justify-content: space-between;
+}
