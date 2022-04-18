@@ -186,13 +186,31 @@ p {
   padding-top: 30px;
   height: 80px;
   text-align: center;
+  margin: 0;
 }
 
 li.site-nav-item {
   display: inline;
-  padding: 0;
+  padding: 0 10px;
   font-size: 16px!important;
   text-transform: uppercase;
   white-space: nowrap;
+}
 
+.navbar-language-container {
+  position: absolute;
+}
+
+.wrraper {
+  max-width: none;
+  position: relative;
+}
+
+.header .title .image {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  margin: 0 auto;
+  max-width: 85vw;
+  transform: translateY(-50%);
 }
