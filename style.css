@@ -199,6 +199,12 @@ li.site-nav-item {
 
 .navbar-language-container {
   position: absolute;
+  top: 0;
+  right: 20px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  z-index: 500;
 }
 
 .wrraper {
@@ -206,11 +212,16 @@ li.site-nav-item {
   position: relative;
 }
 
-.header .title .image {
+.header-content
+.title .image {
+  background-attachment: fixed;
+}
+
+.header .title {
+  max-width: 85vw;
   text-align: center;
   position: relative;
   top: 50%;
   margin: 0 auto;
-  max-width: 85vw;
-  transform: translateY(-50%);
+  transform: translateY(-30%);
 }
